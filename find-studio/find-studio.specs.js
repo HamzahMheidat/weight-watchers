@@ -23,7 +23,6 @@ describe('Test Fileting Functionality For Weight Watchers Website', () => {
         await findStudioPageObjects.searchStudio(zipCode);
         const firstLocationId = await findStudioPageObjects.getElementAttribute(findStudioLocators.meetingLocationDivs, 'id');
         const studioDays = await findStudioPageObjects.getFirstStudioDays();
-        studioDays.push('SUN');
         await findStudioPageObjects.filterByStudioDays(studioDays);
         const firstLocationIdAfterClicking = await findStudioPageObjects.getElementAttribute(findStudioLocators.meetingLocationDivs, 'id');
         expect(firstLocationId == firstLocationIdAfterClicking).toBe(true);

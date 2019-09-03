@@ -5,7 +5,9 @@ exports.config = {
     capabilities: {
         browserName: 'chrome',
         chromeOptions: {
-            args: ["--window-size=1200,800"]
+            args: ["--window-size=2000,1500",
+                "--headless"
+            ]
         }
     },
     framework: 'jasmine',
@@ -13,7 +15,7 @@ exports.config = {
     onPrepare: () => {
         global.EC = protractor.ExpectedConditions;
         global.WAIT_DURATION = 5000;
-        global.WEEK_DAYS=['SUN','MON','TUE','WED','THU','FRI','SAT'];
+        global.WEEK_DAYS = ['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT'];
         global.BASE_URL = 'https://www.weightwatchers.com/us/';
         browser.waitForAngularEnabled(false);
         jasmine.getEnv().addReporter(new SpecReporter({
