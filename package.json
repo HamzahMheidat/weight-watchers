@@ -1,0 +1,14 @@
+{
+  "name": "weightwatchers",
+  "version": "1.0.0",
+  "description": "",
+  "main": "conf.js",
+  "scripts": {
+    "e2e": "webdriver-manager update && protractor conf.js"
+  },
+  "author": "Hamzah AL-mheidat",
+  "dependencies": {
+    "jasmine-spec-reporter": "^4.2.1",
+    "protractor": "5.4.2"
+  }
+}
