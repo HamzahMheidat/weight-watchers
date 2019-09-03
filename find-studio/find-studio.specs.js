@@ -2,7 +2,7 @@ const findStudioLocators = require('./find-studio.locators.js');
 const findStudioPageObjects = require('./find-studio.pageObject.js');
 const utilityFunctions = require('../utility-Functions /array-utility.js');
 
-describe('Test find studio at weight watchers website', () => {
+describe('Test Fileting Functionality For Weight Watchers Website', () => {
     const zipCode = '10003';
 
     it(`should verify that url contains the zip code from search field`, async() => {
