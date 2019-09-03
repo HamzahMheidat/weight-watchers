@@ -1,7 +1,7 @@
 # Installation
 
-* Use the node package module ($npm install).
-* Use the protractor to start the test ($npm run e2e).
+* Use the node package module `npm install`.
+* Use the protractor to start the test `npm run e2e`.
 
 # Description
 
