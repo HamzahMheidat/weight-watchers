@@ -5,7 +5,7 @@
 
 # Description
 
-Test find studio at weight watchers website and verify that filter by days buttons work correctly. 
+Test find studio at weight watchers website and verify that filter by days buttons work correctly.
 
 # Test Cases:
 

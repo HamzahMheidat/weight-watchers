@@ -14,7 +14,7 @@ exports.config = {
     specs: ['find-studio/find-studio.specs.js'],
     onPrepare: () => {
         global.EC = protractor.ExpectedConditions;
-        global.WAIT_DURATION = 20000;
+        global.WAIT_DURATION = 200000;
         global.WEEK_DAYS = ['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT'];
         global.BASE_URL = 'https://www.weightwatchers.com/us/';
         browser.waitForAngularEnabled(false);
